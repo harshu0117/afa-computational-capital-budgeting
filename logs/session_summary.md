@@ -1,14 +1,13 @@
 # Dynamic Project State & Progress Log
-**Master Reference:** [Tokenization.pdf](file:///C:/Users/Hanamanthagouda/Desktop/afa/Tokenization.pdf) | **Last Updated:** 2026-06-30
+**Master Reference:** [AFA_Simulation_V1.pdf](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/AFA_Simulation_V1.pdf) | **Last Updated:** 2026-07-17
 
 ## 1. Completed Milestones
-- Initialized fresh project repository and AFA logging ([GEMINI.md](file:///C:/Users/Hanamanthagouda/Desktop/afa/GEMINI.md)).
-- Created `src` directory and cleared `test` directory.
-- Created `suggestions` folder and wrote [suggestion1.txt](file:///C:/Users/Hanamanthagouda/Desktop/afa/suggestions/suggestion1.txt).
+- Analyzed research objectives for Shared-AI-Vendor Effect simulation.
+- Created modular simulation codebase: [simulation_core.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/simulation_core.py) and runners [run_part1.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part1.py), [run_part2.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part2.py), [run_part3.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part3.py), [run_part4.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part4.py).
+- Supported data generation, residuals regression, rolling comovement, event days, and equilibrium loops.
 
 ## 2. Current File & Module State
-- **Audit Logs:** Active tracking in [full_conversation_log.md](file:///C:/Users/Hanamanthagouda/Desktop/afa/logs/full_conversation_log.md).
-- **Suggestions:** [suggestion1.txt](file:///C:/Users/Hanamanthagouda/Desktop/afa/suggestions/suggestion1.txt) outlines modeling critiques with proofs.
+- **Simulation Code:** `simulation_core.py`, `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py` in [miniProject](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject).
 
 ## 3. Dynamic Workflow Status
-- Ready for simulation modeling under `src/` following the updated roadmap.
+- Scripts ready for manual execution and validation by the user.

@@ -1,0 +1,11 @@
+Table 5: Equilibrium Results Before and After Improvement
+--------------------------------------------------------------------------------
+Quantity                       | Before (A=0.20)        | After (A=0.24)        
+--------------------------------------------------------------------------------
+Vendor A Share                 |               100.00% |               100.00%
+Vendor A Usage (delta_A)       |              0.181818 |              0.218182
+Vendor B Usage (delta_B)       |              0.180000 |              0.180000
+Vendor A Crowd Size (D_A)      |              0.181818 |              0.218182
+Vendor B Crowd Size (D_B)      |              0.000000 |              0.000000
+Total Systematic Variance      |              0.006612 |              0.009521
+--------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+Table 1: Simulation Setup and Parameter Verification
+-------------------------------------------------------
+Parameter                      | Value               
+-------------------------------------------------------
+Number of Firms (N)            | 500                 
+Number of Trading Days (T)     | 1000                
+Vendor A Share                 | 60.0% (300 firms)
+Vendor B Share                 | 40.0% (200 firms)
+Average Usage (delta_i)        | 0.199425
+Average Beta (beta_i)          | 1.002286
+-------------------------------------------------------
+Verification: Both datasets were built from identical firm assignments: True
+-------------------------------------------------------

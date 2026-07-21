@@ -1,13 +1,14 @@
 # Dynamic Project State & Progress Log
-**Master Reference:** [AFA_Simulation_V1.pdf](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/AFA_Simulation_V1.pdf) | **Last Updated:** 2026-07-17
+**Master Reference:** [AFA_Simulation_V2.pdf](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/AFA_Simulation_V2.pdf) | **Last Updated:** 2026-07-21
 
 ## 1. Completed Milestones
-- Analyzed research objectives for Shared-AI-Vendor Effect simulation.
-- Created modular simulation codebase: [simulation_core.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/simulation_core.py) and runners [run_part1.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part1.py), [run_part2.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part2.py), [run_part3.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part3.py), [run_part4.py](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/run_part4.py).
-- Supported data generation, residuals regression, rolling comovement, event days, and equilibrium loops.
+- Updated evaluation framework [simulation_analysis.md](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/simulation_analysis.md) with dedicated Round 2 critiques.
+- Added mathematical and economic critiques for Parts 5–8 (dyadic clustering temporal persistence, fat-tailed Monte Carlo distributions, endogenous usage IV specs, and non-linear tipping S-curves).
+- Kept all simulation code files intact per user instruction.
 
 ## 2. Current File & Module State
-- **Simulation Code:** `simulation_core.py`, `run_part1.py`, `run_part2.py`, `run_part3.py`, `run_part4.py` in [miniProject](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject).
+- **Evaluation Report:** [simulation_analysis.md](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/simulation_analysis.md) (Rounds 1 & 2 complete).
+- **Core & Runners:** `simulation_core.py`, `run_part1.py` through `run_part8.py` in [miniProject](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject).
 
 ## 3. Dynamic Workflow Status
-- Scripts ready for manual execution and validation by the user.
+- Evaluation report updated; code files preserved and ready for manual execution.

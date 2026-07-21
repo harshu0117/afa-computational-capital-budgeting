@@ -1,0 +1,11 @@
+Table 9: Interior Frontier Experiment (Before vs. After 0.005 Model Improvement)
+================================================================================
+Quantity                       | Before (A=0.190, B=0.180) | After (A=0.195, B=0.180)
+================================================================================
+Vendor A Share                 |                80.00% |                90.00%
+Vendor A Usage (delta_A)       |              0.176811 |              0.177997
+Vendor B Usage (delta_B)       |              0.175588 |              0.179109
+Vendor A Crowd Size (D_A)      |              0.141449 |              0.160197
+Vendor B Crowd Size (D_B)      |              0.035118 |              0.017911
+Total Systematic Variance      |              0.004248 |              0.005197
+================================================================================

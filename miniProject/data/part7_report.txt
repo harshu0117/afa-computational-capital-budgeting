@@ -1,0 +1,11 @@
+Table 8: Diagnostic Ladder for the Usage Slope
+================================================================================
+Rung / Model Specification                    | Estimated Slope    | Gap from 0.200 
+================================================================================
+0. True Theoretical Value                     |             0.2000 |          0.0000
+1. Round 1 Baseline (Estimated beta, T=1000)  |             0.1468 |          0.0532
+2. Oracle Residuals (True beta_i used)        |             0.1467 |          0.0533
+3. Fisher z-Transformation                    |             0.1470 |          0.0530
+4. Large Sample Length (T=4,000 days)         |             0.2007 |         -0.0007
+5. Same-Vendor Specification Only             |             0.1650 |          0.0350
+================================================================================

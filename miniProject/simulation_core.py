@@ -13,11 +13,11 @@ THETA_ZERO = 0.0
 # [AI-Generated]
 import numpy as np
 
-def generate_market_data(theta, event_days_A=None, event_sd_factor=5.0):
+def generate_market_data(theta, event_days_A=None, event_sd_factor=5.0, num_days=NUM_DAYS):
     """
     Generates all firm assignments, daily shocks, and returns for a given theta.
-    If event_days_A is provided, vendor A's shock standard deviation is multiplied
-    by event_sd_factor on those days.
+    Supports variable sample lengths via num_days (e.g., num_days=4000 for diagnostic testing)
+    without PRNG re-seeding between parameter creation and shock generation.
     """
     np.random.seed(SEED)
     
@@ -30,25 +30,20 @@ def generate_market_data(theta, event_days_A=None, event_sd_factor=5.0):
     # 3. Assign market sensitivity beta_i ~ N(1, 0.3^2)
     beta = np.random.normal(BETA_MEAN, BETA_SD, size=NUM_FIRMS)
     
-    # 4. Draw daily shocks
-    m = np.random.normal(0.0, 1.0, size=NUM_DAYS)
-    eta_A = np.random.normal(0.0, 1.0, size=NUM_DAYS)
-    eta_B = np.random.normal(0.0, 1.0, size=NUM_DAYS)
-    epsilon = np.random.normal(0.0, 1.0, size=(NUM_DAYS, NUM_FIRMS))
+    # 4. Draw daily shocks for num_days
+    m = np.random.normal(0.0, 1.0, size=num_days)
+    eta_A = np.random.normal(0.0, 1.0, size=num_days)
+    eta_B = np.random.normal(0.0, 1.0, size=num_days)
+    epsilon = np.random.normal(0.0, 1.0, size=(num_days, NUM_FIRMS))
     
     # Modify shocks for Part 3 event days if provided
     if event_days_A is not None:
         for d in event_days_A:
-            # Re-draw or scale vendor A's shock on event days
-            # The PDF says: "vendor A's shock is drawn with five times the standard deviation: eta_A,t ~ N(0, 5^2)"
-            # Since eta_A is already drawn from N(0,1), we can scale the existing draw by 5
-            # to preserve the exact underlying random draw sequence, or re-draw it.
-            # Scaling the existing draw is equivalent to drawing from N(0, 5^2) using the same random number.
             eta_A[d] = eta_A[d] * event_sd_factor
             
     # 5. Build returns
-    # Create vendor shock mapping: eta_v of shape (NUM_DAYS, NUM_FIRMS)
-    eta_v = np.zeros((NUM_DAYS, NUM_FIRMS))
+    # Create vendor shock mapping: eta_v of shape (num_days, NUM_FIRMS)
+    eta_v = np.zeros((num_days, NUM_FIRMS))
     eta_v[:, :VENDOR_A_COUNT] = eta_A[:, np.newaxis]
     eta_v[:, VENDOR_A_COUNT:] = eta_B[:, np.newaxis]
     

@@ -1,0 +1,4 @@
+=== PART 11 REPORT: Risk Decomposition Verification ===
+
+Identity: Systematic Risk = [0.2 * (delta_tot)^2] * [HHI]
+Largest absolute discrepancy across the entire Part-10 sweep: 0.00e+00

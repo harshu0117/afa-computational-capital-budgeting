@@ -1,0 +1,15 @@
+=== PART 12 REPORT: The Survival Region ===
+
+Table 3: Vendor Diversity Tipping Threshold Matrix (1 + k / chi)
+======================================================================
+Cost Curvature (chi)   | theta=0.05  | theta=0.10  | theta=0.20  | theta=0.40 
+======================================================================
+chi = 0.5              |   1.0500   |   1.1000   |   1.2000   |   1.4000  
+chi = 1.0              |   1.0250   |   1.0500   |   1.1000   |   1.2000  
+chi = 2.0              |   1.0125   |   1.0250   |   1.0500   |   1.1000  
+chi = 4.0              |   1.0063   |   1.0125   |   1.0250   |   1.0500  
+======================================================================
+
+Economic Interpretation:
+Thresholds range from 1.006 (weakly correlated errors theta=0.05, expensive integration chi=4.0) to 1.400 (strongly correlated errors theta=0.40, cheap integration chi=0.5).
+Vendor diversity is most fragile exactly where AI errors are least correlated, and most robust where AI errors are most correlated.

@@ -1,0 +1,17 @@
+=== PART 10 REPORT: Sweep and Frontier Experiment ===
+
+Table 2: Frontier Experiment Results (Delta_A 0.190 -> 0.195, Delta_B = 0.180)
+===============================================================================================
+Quantity                            | Before (Delta_A=0.190) | After (Delta_A=0.195)  | Pct Change  
+===============================================================================================
+Leader Share (s_A)                  |               78.3784% |               92.0000% |       17.38%
+Total Delegation (delta_tot)        |             0.17619048 |             0.17857143 |        1.35%
+Adoption Component (0.2*delta_tot^2) |             0.00620862 |             0.00637755 |        2.72%
+Concentration Component (HHI)       |             0.66106647 |             0.85280000 |       29.00%
+Total Systematic Risk               |             0.00410431 |             0.00543878 |       32.51%
+===============================================================================================
+
+Systematic Risk Change Decomposition:
+  - Total Systematic Risk Increase: 32.51%
+  - Contribution from Higher Delegation (Adoption): ~2.72 percentage points
+  - Contribution from Higher Concentration (HHI):   ~29.00 percentage points

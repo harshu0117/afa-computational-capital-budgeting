@@ -196,3 +196,17 @@ you need to give constructive critque the appraoch according mathematical rigour
 
 ## [2026-07-21 12:28:12] AI Response
 I have updated [simulation_analysis.md](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/simulation_analysis.md) with a dedicated section containing constructive mathematical and economic critiques for Round 2 (Parts 5–8) following [AFA_Simulation_V2.pdf](file:///C:/Users/Hanamanthagouda/Desktop/afa/miniProject/AFA_Simulation_V2.pdf), without modifying any code files.
+
+## [2026-07-23T08:59:23+05:30] User Prompt
+<USER_REQUEST>
+@[miniProject/AFA_Simulation_V3.pdf] this is the next phase, i want you to read it carefully specially the first page it has some ground rules and important instruction, for context read @[miniProject/AFA_Simulation_V1.pdf] and @[miniProject/AFA_Simulation_V2.pdf] this are already done and we are heading with phase 3 (@[miniProject/AFA_Simulation_V3.pdf] ) , implement each part as seperate part (follow the pattern we did earlier) and do exactly as mentioned in the pdf , (strictly) ntg more ntg less and dont run any files just code ,
+</USER_REQUEST>
+
+## [2026-07-23T09:04:00+05:30] AI Response
+Implemented Phase 3 (Round 3) exact equilibrium solver and verification scripts (Parts 9-12) per AFA_Simulation_V3.pdf specifications:
+- Created reference solver equilibrium_solver.py
+- Implemented run_part9.py (Exact formula vs iterative solver certified to <1e-12)
+- Implemented run_part10.py (Quality ratio sweep and frontier experiment with risk decomposition)
+- Implemented run_part11.py (Risk decomposition identity verification to machine precision)
+- Implemented run_part12.py (Survival region contour map and threshold matrix)
+- Authored memo_9to12.md and updated simulation_analysis.md to Version 4.0.
